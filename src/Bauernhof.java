@@ -1,15 +1,15 @@
 import java.util.Arrays;
 
 public class Bauernhof {
-    private int zeilen;
-    private int spalten;
+    private final int zeilen;
+    private final int spalten;
     private Saat[][] felder;
-    private Saat[][] felder_historie;
+    private final Saat[][] felder_historie;
 
-    Bauernhof(int zeilen, int spalten/*, Saat[][] felder_historie*/) {
+    Bauernhof(int zeilen, int spalten, Saat[][] felder_historie) {
         this.zeilen = zeilen;
         this.spalten = spalten;
-        //this.felder_historie = felder_historie;
+        this.felder_historie = felder_historie;
     }
 
     public Saat[] get_erlaubte_nachfolger(Saat s) {
@@ -17,6 +17,18 @@ public class Bauernhof {
         return result;
     }
 
+    public boolean nachbarkontrolle(int x, int y) {
+        Saat thisSeed = felder[x][y];
+ 
+    }
+
+    public Saat[] get_passende_nachbarn(Saat s) {
+
+    }
+
+    public boolean ueberpruefen() {
+
+    }
     @Override
     public String toString() {
         return "Bauernhof{" +
