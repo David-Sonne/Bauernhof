@@ -1,7 +1,8 @@
 public enum Saat {
-    ;
-    private Saat Kartoffeln;
-    private Saat Tomaten;
-    private Saat Raps;
-
+    Kartoffeln,
+    Tomaten,
+    Weizen,
+    Reis,
+    Nochwas,
+    Raps;
 }
